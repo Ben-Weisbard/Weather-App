@@ -227,7 +227,6 @@
 .hero__description {
   font-size: 60px;
   background: #981dfd;
-  background: linear-gradient(to top, #1dfdd8, #d400ff);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -277,6 +276,7 @@
     background: #1dfdea;
     background: linear-gradient(to top, #1dfdea, #1900ff);
     background-size: 100%;
+    padding: 0;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -286,7 +286,6 @@
   .hero__description {
     font-size: 25px;
     background: #981dfd;
-    background: linear-gradient(to right, #1da3fd, #d400ff);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
