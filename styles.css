@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
     scroll-behavior: smooth;
   }
   
@@ -73,7 +73,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
     width: 100%;
   }
   
@@ -91,7 +90,7 @@
     background: #833ab4;
     background: -webkit-linear-gradient(to right, #f9fc45, #1dfdea, #3a56b4);
     background: linear-gradient(to right, #f9fc45, #1dfdea, #3a56b4);
-    color: rgb(83, 83, 83);
+    color: rgb(0, 0, 0);
     transition: all 0.3s ease;
   }
   
@@ -198,14 +197,16 @@
 
 .hero{
   background: #000000;
-  background: linear-gradient(to right, #161616, #000000);
-  padding-bottom: 50%;
+  background: linear-gradient(to right, #252525, #000000);
 }
 
 .hero__container {
   margin: 0 auto;
-  height: 90%;
   padding: 30px;
+}
+
+.hero__container img {
+  size-adjust: 10px;
 }
 
 .hero__heading {
@@ -215,6 +216,7 @@
 }
 
 .hero__heading span {
+  margin: 0;
   background: #1dfdea;
   background: linear-gradient(to right, #1dfdea, #002fff);
   background-size: 100%;
@@ -225,8 +227,9 @@
 }
 
 .hero__description {
+  padding: 0;
   font-size: 60px;
-  background: #981dfd;
+  background: #1d98fd;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -252,27 +255,39 @@
   outline: none;
 }
 
+.main__btn:hover {
+  transform: scale(1.05);
+  animation: all ease;
+}
+
 .main__btn a {
   position: relative;
   z-index: 2;
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 @media (max-width: 960px) {
   .hero{
     background: #000000;
-    background: linear-gradient(to right, #161616, #000000);
-    padding-bottom: 150%;
+    background: linear-gradient(to right, #333333, #000000);
+  }
+
+  .hero__container {
+    margin: 0 auto;
   }
 
   .hero__heading {
-    font-size: 45px;
-    margin-bottom: 24px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
     color: #fff;
   }
 
   .hero__heading span {
+    font-size: 80px;
     background: #1dfdea;
     background: linear-gradient(to top, #1dfdea, #1900ff);
     background-size: 100%;
@@ -284,8 +299,9 @@
   }
 
   .hero__description {
-    font-size: 25px;
-    background: #981dfd;
+    font-size: 40px;
+    background: #1d98fd;
+    text-align: center;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -296,14 +312,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 35px;
+    padding: 25px 45px;
     margin: auto;
     background: #1dfdea;
     background: linear-gradient(to top, #17b1a4, #5b51b3);
     background-size: 100%;
-    font-size: 15px;
+    font-size: 25px;
     border: none;
-    border-radius: 8px;
+    border-radius: 50px;
     outline: none;
     margin-top: 1rem;
     cursor: pointer;
@@ -315,7 +331,101 @@
   .main__btn a {
     position: relative;
     z-index: 2;
-    color: #fff;
+    color: #000;
     text-decoration: none;
   }
+}
+
+
+
+.main__container {
+  background: #011;
+}
+
+.main__content hr {
+}
+
+.main__content {
+  font-size: 20px;
+  color: rgb(126, 126, 126);
+  padding: 2rem;
+}
+
+.main__content h1 {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  color: #fff;
+}
+
+.main__content h2 {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.main__about {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  color: #6b6b6b;
+}
+
+.main__btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1dfdea;
+  background: linear-gradient(to top, #17b1a4, #5b51b3);
+  background-size: 100%;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+@media (max-width: 960px) {
+  .main__btn2 {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50px;
+  }
+}
+
+@media (min-width: 960px) {
+  .main__content h2 {
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .main__btn2 {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+}
+
+.main__btn2:hover {
+  transform: scale(1.05);
+  animation: all ease;
+}
+
+.weather {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.weather__box{ 
+  padding: 1rem;
+  padding-bottom: 10rem;
+  background: #2b2b2b;
+  border: white;
+  border-radius: 15px;
+  opacity: 70%;
+}
+
+.weather__heading {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
