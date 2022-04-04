@@ -3,7 +3,7 @@
 
 <head>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+Arabic:wght@200;600&display=swap');
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
     <!-- NavBar Section -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="#" id="navbar__logo">Weather</a>
+            <a href="#weather" id="navbar__logo">Weather</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -38,38 +38,42 @@
             </ul>
         </div>
     </nav>
-
     <!-- Hero Section -->
+
     <div class="hero" id="home">
         <div class="hero__container">
             <!-- <img src="logo.png" alt=""> -->
-            <h1 class="hero__heading">Weather delivered to <br><span>You</span></h1>
-            <p class="hero__description">With Unlimited Possibilities</p>'
+            <div class="right__box"></div>
+            <div class="vr">
+                <hr style="width: 8px; height: 560px; border-radius: 8px; display: flex" , color=#3282B8>
+            </div>
+            <h1 class="hero__heading">weather delivered to <br><span>You</span></h1>
             <button class="main__btn"><a href="#weather">Weather</a></button>
             <!-- the DIV that will contain the weather widget -->
+            <div class="hr">
+                <hr style="width:100%; margin-top: 2rem; border-radius: 8px;" , size="8" , color=#3282B8 ,>
+            </div>
             <div class="weather" id="weather">
                 <div class="weather__box">
                     <div class="weather__heading">
-                        <h1>Weather in, </h1>
+                        <strong><span id="datetime"></span></strong>
+                        <script>
+                            var dt = new Date();
+                            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-
     <!-- About Section-->
     <div class="main" id="about">
         <div class="main__container">
-            <div class="main__img--container">
-                <div class="main__img--card">ICON</div>
-            </div>
             <div class="main__about">
                 <h3>About Us</h3>
             </div>
-            <hr style="width:95%; margin: auto; border-radius: 8px;" , size="8" , color="grey" ,>
+            <hr style="width:95.5%; margin: auto; border-radius: 8px;" , size="8" , color=#3282B8 ,>
             <div class="main__content">
                 <h1>What do we do?</h1>
                 <h2>We Deliver weather updates to you in real time</h2>
@@ -78,7 +82,6 @@
             </div>
         </div>
     </div>
-
     <script src="app.js"></script>
 </body>
 
